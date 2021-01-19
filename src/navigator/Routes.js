@@ -18,7 +18,7 @@ const Routes = () => {
     const value = await AsyncStorage.getItem('currentUser');
     if (value !== null) {
       const user = JSON.parse(value);
-      dispatch(setUser({user}));
+      dispatch(setUser(user));
     }
   };
 
